@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="QuantityCardView">
+        <attr name="android:fontFamily" />
+        <attr name="android:textColor" />
+        <attr name="android:textSize" />
+        <attr name="android:width" />
+        <attr name="android:height" />
+        <attr name="reverseAnimation" format="boolean" />
+        <attr name="startingQuantity" format="integer" />
+        <attr name="minQuantity" format="integer" />
+        <attr name="maxQuantity" format="integer" />
+        <attr name="buttonsTextColor" format="color" />
+        <attr name="increaseTextColor" format="color" />
+        <attr name="decreaseTextColor" format="color" />
+        <attr name="buttonsTextSize" format="dimension" />
+        <attr name="increaseTextSize" format="dimension" />
+        <attr name="decreaseTextSize" format="dimension" />
+        <attr name="increaseImageSrc" format="reference" />
+        <attr name="decreaseImageSrc" format="reference" />
+        <attr name="increaseImageDisabledSrc" format="reference" />
+        <attr name="decreaseImageDisabledSrc" format="reference" />
+        <attr name="transitionDuration" format="integer" />
+        <attr name="layoutBackgroundColor" format="color" />
+    </declare-styleable>
+</resources>

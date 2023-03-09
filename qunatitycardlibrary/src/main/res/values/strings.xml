@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="decrease_quantity_image_content_desc">Decrease Quantity Image</string>
+    <string name="increase_quantity_image_content_desc">Increase Quantity Image</string>
+    <string name="plus">\uf067</string>
+    <string name="minus">\uf068</string>
+</resources>

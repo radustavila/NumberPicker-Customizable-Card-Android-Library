@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/quantity_cardview_by_default"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <com.radustavila.qunatitycardlibrary.QuantityCardView
+        android:id="@+id/first_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/quantity_cardview_customized_xml"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <com.radustavila.qunatitycardlibrary.QuantityCardView
+        android:id="@+id/second_card"
+        android:layout_width="200dp"
+        android:layout_height="65dp"
+        android:layout_margin="20dp"
+        android:textSize="7sp"
+        android:textColor="@color/teal_700"
+        app:decreaseTextColor="@color/purple_200"
+        app:increaseTextColor="@color/purple_700"
+        app:decreaseTextSize="13sp"
+        app:increaseTextSize="13sp"
+        app:startingQuantity="1"
+        app:minQuantity="0"
+        app:maxQuantity="10"
+        app:reverseAnimation="false"
+        app:transitionDuration="300"
+        app:layoutBackgroundColor="@color/gray"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/quantity_cardview_customized_programatically"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <com.radustavila.qunatitycardlibrary.QuantityCardView
+        android:id="@+id/third_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        />
+
+</LinearLayout>

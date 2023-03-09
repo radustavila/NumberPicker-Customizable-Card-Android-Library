@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Quantity CardView Example</string>
+    <string name="quantity_cardview_by_default">Quantity CardView by default:</string>
+    <string name="quantity_cardview_customized_xml">Quantity CardView customized (XML):</string>
+    <string name="quantity_cardview_customized_programatically">Quantity CardView customized (Programatically):</string>
+</resources>
