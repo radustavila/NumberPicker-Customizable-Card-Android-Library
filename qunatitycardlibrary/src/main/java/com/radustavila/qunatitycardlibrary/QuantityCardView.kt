@@ -140,6 +140,7 @@ class QuantityCardView @JvmOverloads constructor(context: Context, attrs: Attrib
                 mTextColor = getColor(R.styleable.QuantityCardView_android_textColor, DEFAULT_TEXT_COLOR_QUANTITY)
                 mTextSize = getDimension(R.styleable.QuantityCardView_android_textSize, DEFAULT_TEXT_SIZE_QUANTITY)
 
+                mTextColorDisabled = getColor(R.styleable.QuantityCardView_disabledButtonsTextColor, DEFAULT_TEXT_COLOR_DISABLED)
                 mDecreaseTextColor = getColor(R.styleable.QuantityCardView_decreaseTextColor, DEFAULT_TEXT_COLOR_BUTTONS)
                 mIncreaseTextColor = getColor(R.styleable.QuantityCardView_increaseTextColor, DEFAULT_TEXT_COLOR_BUTTONS)
                 mIncreaseTextSize = getDimension(R.styleable.QuantityCardView_increaseTextSize, DEFAULT_TEXT_SIZE_INCREASE)
@@ -359,6 +360,13 @@ class QuantityCardView @JvmOverloads constructor(context: Context, attrs: Attrib
         mDecreaseTextColor = color
         setIncreaseTextColor(mIncreaseTextColor)
         setDecreaseTextColor(mDecreaseTextColor)
+    }
+
+    /**
+     * Set Increasing' and Decreasing' TextViews text color when disabled.
+     */
+    fun setDisabledButtonsTextColor(@ColorInt color: Int) {
+        mTextColorDisabled = color
     }
 
     /**
@@ -715,6 +723,7 @@ class QuantityCardView @JvmOverloads constructor(context: Context, attrs: Attrib
             mTextColor,
             mIncreaseTextColor,
             mDecreaseTextColor,
+            mTextColorDisabled,
             mIncreaseTextSize,
             mDecreaseTextSize,
             mTextSize,
@@ -739,6 +748,7 @@ class QuantityCardView @JvmOverloads constructor(context: Context, attrs: Attrib
         mTextColor = myState?.textColor ?: DEFAULT_TEXT_COLOR_QUANTITY
         mIncreaseTextColor = myState?.textColorIncrease ?: DEFAULT_TEXT_COLOR_BUTTONS
         mDecreaseTextColor = myState?.textColorDecrease ?: DEFAULT_TEXT_COLOR_BUTTONS
+        mTextColorDisabled = myState?.textColorDisabled ?: DEFAULT_TEXT_COLOR_DISABLED
         mIncreaseTextSize = myState?.textSizeIncrease ?: DEFAULT_TEXT_SIZE_INCREASE
         mDecreaseTextSize = myState?.textSizeDecrease ?: DEFAULT_TEXT_SIZE_DECREASE
         mTextSize = myState?.textSize ?: DEFAULT_TEXT_SIZE_QUANTITY
@@ -764,6 +774,7 @@ class QuantityCardView @JvmOverloads constructor(context: Context, attrs: Attrib
         val textColor: Int,
         val textColorIncrease: Int,
         val textColorDecrease: Int,
+        val textColorDisabled: Int,
         val textSizeIncrease: Float,
         val textSizeDecrease: Float,
         val textSize: Float,

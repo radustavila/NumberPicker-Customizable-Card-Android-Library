@@ -10,6 +10,7 @@
         <attr name="startingQuantity" format="integer" />
         <attr name="minQuantity" format="integer" />
         <attr name="maxQuantity" format="integer" />
+        <attr name="disabledButtonsTextColor" format="color" />
         <attr name="buttonsTextColor" format="color" />
         <attr name="increaseTextColor" format="color" />
         <attr name="decreaseTextColor" format="color" />
