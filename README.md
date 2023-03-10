@@ -25,7 +25,7 @@ And add a dependency code to your <b>module</b>'s build.gradle file.
 
 ```
 dependencies {
-      implementation 'com.github.radustavila:Plus-Minus-Quantity-Card-Android-Library:1.0'
+      implementation 'com.github.radustavila:Plus-Minus-Quantity-Card-Android-Library:1.1'
 }
 ```
 
@@ -64,7 +64,7 @@ dependencies {
       />
 ```
 
-- Cusotm in your Activity/Fragment/View file:
+- Custom in your Activity/Fragment/View file:
 
 ```
     val quantityCard: QuantityCardView = findViewById(R.id.third_card)
@@ -100,6 +100,7 @@ dependencies {
 | app:buttonsTextColor | ColorInt | Color.DKGRAY | Increase & Decrease TextView's color
 | app:increaseTextColor | ColorInt | Color.DKGRAY | Increase TextView's color
 | app:decreaseTextColor | ColorInt | Color.DKGRAY | Decrease TextView's color
+| app:disabledButtonsTextColor | ColorInt | Color.LTGRAY | Increase & Decrease TextView's color when disabled
 | app:buttonsTextSize | Dimension | 13sp | Increase & Decrease TextView's size
 | app:increaseTextSize | Dimension | 13sp | Increase TextView's size
 | app:decreaseTextSize | Dimension | 13sp | Decrease TextView's size
